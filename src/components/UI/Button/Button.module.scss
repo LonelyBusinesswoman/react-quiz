@@ -1,0 +1,49 @@
+.Button{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #ffffff;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: transparent;
+    cursor: pointer;
+    .error{
+        background: rgba(240, 87, 108, 1);
+    }
+    .primary{
+        background: orange;
+    }
+    .success{
+        background: rgba(161, 240, 69, 1);
+    }
+    &:hover{
+        background: rgba(255,255,255, 0.2);
+    }
+}
+
+// # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+// # dependencies
+// /node_modules
+// /.pnp
+// .pnp.js
+
+// # testing
+// /coverage
+
+// # production
+// /build
+
+// # misc
+// .DS_Store
+// .env.local
+// .env.development.local
+// .env.test.local
+// .env.production.local
+
+// npm-debug.log*
+// yarn-debug.log*
+// yarn-error.log*
