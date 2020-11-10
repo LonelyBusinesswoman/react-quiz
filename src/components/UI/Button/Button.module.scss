@@ -22,4 +22,8 @@
     &:hover{
         background: rgba(255,255,255, 0.2);
     }
+    &:disabled{
+        background: rgba(240, 87, 108, 0.5);
+        cursor: no-drop
+    }
 }
