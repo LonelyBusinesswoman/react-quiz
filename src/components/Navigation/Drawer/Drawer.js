@@ -3,8 +3,6 @@ import classes from './Drawer.module.scss'
 import Backdrop from '../../UI/Backdrop/Backdrop'
 import {NavLink} from 'react-router-dom';
 
-
-
 const links = [
     {to:'/', label: ' Список', exact: true},
     {to:'/auth', label: ' Авторизация', exact: false},
