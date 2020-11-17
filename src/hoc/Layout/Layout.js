@@ -24,6 +24,7 @@ class Layout extends Component{
                 <Drawer
                     isOpen={this.state.menu}
                     onClose={this.menuCloseHandler}
+                    isAuthenticated={this.props.isAuthenticated}
                 >
 
                 </Drawer>
@@ -40,5 +41,9 @@ class Layout extends Component{
         );
     }
 }
-
-export default connect()(Layout)
+function mapStateToProps(state){
+    return {
+        isAuthenticated: !!state.auth.token
+    }
+}
+export default connect(mapStateToProps)(Layout)
